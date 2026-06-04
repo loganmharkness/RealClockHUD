@@ -1,4 +1,4 @@
-# RealClock
+# RealClockHUD
 
 Displays the real-life system time as a HUD overlay in Minecraft.
 
