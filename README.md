@@ -1,7 +1,5 @@
 # RealClock
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 Displays the real-life system time as a HUD overlay in Minecraft.
 
 ![Preview](images/preview.png)
@@ -24,6 +22,26 @@ Displays the real-life system time as a HUD overlay in Minecraft.
 - Hides during F1/F3 and screenshots
 
 ---
+
+## Configuration
+
+All settings are stored in `.minecraft/config/realclock.json` and can be edited manually.
+The config is self-healing - any invalid values will be reset to defaults automatically on next launch.
+
+| Setting | Default | Description |
+|---|---|---|
+| `24h` | `false` | Use 24hr time format instead of 12hr |
+| `background` | `true` | Show a dark box behind the clock |
+| `color` | `#FFFFFF` | Text color as a hex value |
+| `corner` | `top-right` | Clock position - `top-left`, `top-right`, `bottom-left`, `bottom-right` |
+| `offsetx` | `4` | Horizontal nudge in pixels from the corner |
+| `offsety` | `4` | Vertical nudge in pixels from the corner |
+| `scale` | `1.0` | Text scale - `1.0` is normal, `2.0` is double size |
+| `seconds` | `false` | Show seconds alongside the time |
+| `shadow` | `true` | Render a drop shadow behind the text |
+| `toggle` | `true` | Whether the clock is currently visible |
+
+The clock can also be toggled in-game with the **K** keybind (rebindable in Options > Controls).
 
 ## Configuration
 
