@@ -10,7 +10,7 @@ Displays the real-life system time as a HUD overlay in Minecraft.
 
 [![Modrinth](https://img.shields.io/badge/Modrinth-00AF5C?style=for-the-badge&logo=modrinth&logoColor=white)](https://modrinth.com/mod/realclockhud)
 [![CurseForge](https://img.shields.io/badge/CurseForge-F16436?style=for-the-badge&logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/mc-mods/realclockhud)
-[![GitHub Release](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/realclockhud/releases/latest)
+[![GitHub Release](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/loganmharkness/realclockhud/releases/latest)
 
 ---
 
