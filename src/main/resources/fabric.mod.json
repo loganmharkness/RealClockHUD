@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "realclock",
+  "version": "${version}",
+  "name": "RealClock",
+  "description": "Displays the real-life system time as a HUD overlay.",
+  "authors": [
+    "Logan"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.loganmharkness.realclock.RealClockMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "~26.1.2",
+    "java": ">=25"
+  }
+}
