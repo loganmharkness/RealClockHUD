@@ -75,12 +75,3 @@ Config file is created automatically at `.minecraft/config/realclock.json` on fi
 `color` is stored as a decimal integer. `16777215` = `#FFFFFF` (white).
 
 ---
-
-## Compatibility
-
-Client-side only. Works on any server including vanilla - the server never sees this mod.
-
-- Minecraft: 26.1.2
-- Fabric Loader: >= 0.18.4
-- Fabric API: any
-- Java: >= 25
