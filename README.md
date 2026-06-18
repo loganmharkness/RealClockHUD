@@ -29,7 +29,7 @@ Displays the real-life system time as a HUD overlay in Minecraft.
 - Self-healing config - invalid or missing values are corrected and re-saved automatically
 - Hides during F1/F3 and screenshots
 - Compatible with all 26.1.x versions - 26.1, 26.1.1, 26.1.2
-
+- Updated for the new 26.2 Update
 ---
 
 ## Settings/Commands
