@@ -20,7 +20,7 @@ public class ClockHud {
         HudElementRegistry.addLast(Identifier.fromNamespaceAndPath("realclock", "clock"), (graphics, deltaTracker) -> {
             Minecraft client = Minecraft.getInstance();
             ClockConfig config = RealClockMod.getConfig();
-            if (!config.visible || client.options.hideGui) return;
+            if (!config.visible || client.gui.hud.isHidden()) return;
             String timeText = LocalTime.now().format(pickFormatter(config));
             int textWidth = client.font.width(timeText);
             int screenWidth = client.getWindow().getGuiScaledWidth();
