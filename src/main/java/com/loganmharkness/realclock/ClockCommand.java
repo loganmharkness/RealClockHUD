@@ -139,6 +139,42 @@ public class ClockCommand {
                             })
                         )
                     )
+                    .then(literal("sessiontimer")
+                        .then(argument("value", BoolArgumentType.bool())
+                            .executes(ctx -> {
+                                boolean val = BoolArgumentType.getBool(ctx, "value");
+                                ClockConfig config = RealClockMod.getConfig();
+                                config.showSessionTimer = val;
+                                config.save();
+                                ctx.getSource().sendFeedback(Component.literal("Show session timer: " + val));
+                                return 1;
+                            })
+                        )
+                    )
+                    .then(literal("gametime")
+                        .then(argument("value", BoolArgumentType.bool())
+                            .executes(ctx -> {
+                                boolean val = BoolArgumentType.getBool(ctx, "value");
+                                ClockConfig config = RealClockMod.getConfig();
+                                config.showGameTime = val;
+                                config.save();
+                                ctx.getSource().sendFeedback(Component.literal("Show game time: " + val));
+                                return 1;
+                            })
+                        )
+                    )
+                    .then(literal("date")
+                        .then(argument("value", BoolArgumentType.bool())
+                            .executes(ctx -> {
+                                boolean val = BoolArgumentType.getBool(ctx, "value");
+                                ClockConfig config = RealClockMod.getConfig();
+                                config.showDate = val;
+                                config.save();
+                                ctx.getSource().sendFeedback(Component.literal("Show date: " + val));
+                                return 1;
+                            })
+                        )
+                    )
                     .then(literal("toggle")
                         .executes(ctx -> {
                             ClockConfig config = RealClockMod.getConfig();

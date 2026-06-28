@@ -22,6 +22,9 @@ public class ClockConfig {
     public Boolean showSeconds = false;
     public Integer color = 0xFFFFFF;
     public Float scale = 1.0f;
+    public Boolean showDate = false;
+    public Boolean showGameTime = false;
+    public Boolean showSessionTimer = false;
     public Boolean showBackground = true;
     public Boolean textShadow = true;
     public Integer offsetX = 4;
@@ -73,7 +76,10 @@ public class ClockConfig {
         if (corner == null)         { corner = d.corner;             dirty = true; }
         if (use24Hour == null)      { use24Hour = d.use24Hour;       dirty = true; }
         if (showSeconds == null)    { showSeconds = d.showSeconds;   dirty = true; }
-        if (showBackground == null) { showBackground = d.showBackground; dirty = true; }
+        if (showDate == null)         { showDate = d.showDate;             dirty = true; }
+        if (showGameTime == null)     { showGameTime = d.showGameTime;         dirty = true; }
+        if (showSessionTimer == null) { showSessionTimer = d.showSessionTimer; dirty = true; }
+        if (showBackground == null)   { showBackground = d.showBackground;     dirty = true; }
         if (textShadow == null)     { textShadow = d.textShadow;     dirty = true; }
         if (color == null || color < 0x000000 || color > 0xFFFFFF) {
             color = d.color;
