@@ -24,7 +24,7 @@ public class ClockHud {
         HudElementRegistry.addLast(Identifier.fromNamespaceAndPath("realclock", "clock"), (graphics, deltaTracker) -> {
             Minecraft client = Minecraft.getInstance();
             ClockConfig config = RealClockMod.getConfig();
-            if (!config.visible || client.gui.hud.isHidden()) return;
+            if (!config.visible) return;
 
             String timeText = LocalTime.now().format(pickFormatter(config));
             String dateText = config.showDate ? LocalDate.now().format(FMT_DATE) : null;
