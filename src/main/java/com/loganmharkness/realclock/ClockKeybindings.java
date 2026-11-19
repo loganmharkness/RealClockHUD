@@ -4,15 +4,13 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.minecraft.client.KeyMapping;
-import org.lwjgl.glfw.GLFW;
 
 public class ClockKeybindings {
 
     public static void register() {
         KeyMapping toggleKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
             "key.realclock.toggle",
-            InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_K,
+            InputConstants.KEY_K,
             KeyMapping.Category.MISC
         ));
 
