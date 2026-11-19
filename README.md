@@ -31,7 +31,20 @@ Displays the real-life system time as a HUD overlay in Minecraft.
 - `/realclock` commands for all settings
 - Self-healing config - invalid or missing values are corrected and re-saved automatically
 - Hides during F1/F3 and screenshots
-- Updated for 26.2
+
+---
+
+## Compatibility
+
+Requires Fabric Loader and Fabric API.
+
+| Minecraft | Jar |
+|---|---|
+| 26.3 | `realclock-1.1.0+26.3.jar` |
+| 26.1.x - 26.2 | `realclock-1.1.0+26.1.x+26.2.jar` |
+
+26.3 changed its keyboard key codes, so it needs its own jar.
+
 ---
 
 ## Settings/Commands
